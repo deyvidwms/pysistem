@@ -1,0 +1,265 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: roboto, sans-serif;
+}
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #FFF;
+}
+
+.card {
+	background-color: #53d8a5;
+	width: 25vw;
+	padding: 50px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(127, 127, 127, 0.8);
+	transition: all ease 0.3s;
+}
+
+.card--logo {
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.form--row {
+	margin-bottom: 10px;
+}
+
+.form--row > p {
+	font-size: 18px;
+	color: #292929;
+	margin: 0px 5px;
+}
+
+.form--row > input[type=text],
+.form--row > input[type=password] {
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+	border-radius: 3px;
+	outline: none;
+	transition: all ease 0.3s;
+	transform: scale(0.97);
+}
+
+.form--row > input[type=text]:focus,
+.form--row > input[type=password]:focus {
+	transform: scale(1);
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.8);
+}
+
+.form--row > a {
+	margin: 5px;
+	font-size: 15px;
+	text-decoration: none;
+	color: #262626;
+	font-family: roboto, sans-serif;
+	font-weight: bold;
+	transition: all ease 0.3s;
+}
+
+.form--row > a:hover,
+.form--row > a:focus {
+	color: black;
+}
+
+.form--row:nth-child(4) {
+	text-align: end;
+	margin-top: 20px;
+}
+
+.form--row #btnEntrar {
+	background-color: transparent;
+	padding: 5px 30px;
+	color: #FFF;
+	font-size: 18px;
+	border: 2px solid #FFF;
+	border-radius: 3px;
+	transform: scale(0.9);
+	transition: all ease 0.3s;
+}
+
+.form--row #btnEntrar:hover, 
+.form--row #btnEntrar:focus {
+	background-color: #FFF;
+    border-color: #FFF;
+    color: #50735e;
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 80%);
+    transform: scale(1.05);
+}
+
+.card--buttons {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+	
+.card--buttons > p {
+	font-size: 20px;
+}			
+
+.card--buttons > button {
+	padding: 10px 50px;
+	background-color: #0B9E66;
+	color: #FFF;
+	margin: 10px;
+	border-radius: 5px;
+	font-size: 18px;
+	transition: all ease 0.3s;
+}
+
+.card--buttons > button:hover,
+.card--buttons > button:focus {
+	background-color: #008f58;
+	transform: scale(1.05) ;
+}
+
+.card--title {
+	text-align: center;
+}
+
+.title {
+	font-size: 45px;
+    color: #FFF;
+    text-shadow: 2px 0px 0px rgb(0 0 0 / 80%);
+    transform: translateY(-15px);
+}
+
+.form--row > #btnEnviar {
+	background-color: #008f58;
+    padding: 5px 30px;
+    color: #FFF;
+    font-size: 18px;
+    border: 2px solid #008f58;
+    border-radius: 3px;
+    transform: scale(0.9);
+    transition: all ease 0.3s;
+}
+
+#email-recuperar,
+#novaSenha,
+#confNovaSenha {
+	border-bottom: 2px solid #008f58;
+}
+
+.form--row > #btnEnviar:hover,
+.form--row > #btnEnviar:focus {
+	background-color: #04b769;
+	border-color: #04b769;
+	transform: scale(1.05);
+}
+
+.linkVoltar{
+	color: #000;
+	text-decoration: none;
+	font-family: roboto, sans-serif;
+	transition: all ease 0.3s;
+}
+
+.linkVoltar:hover {
+	color: #ccc;
+}
+
+@media (max-width: 1560px) {
+	.card {
+		width: 40vw;
+	}
+}
+
+@media (max-width: 980px) {
+	.card {
+		width: 50vw;
+	}
+}
+
+@media (max-width: 690px) {
+	.card {
+		width: 80vw;
+	}
+}
+
+@media (max-width: 480px) {
+	.card {
+		padding: 20px 10px;
+	}
+	.card--buttons > p {
+		font-size: 18px;
+	}		
+	.form--row:nth-child(4) {
+		text-align: center;
+		margin: 0px;
+	}
+	.form--row:nth-child(4) #btnEntrar {
+		width: 100%;
+		margin: 0px;
+		transform: scale(0.98);
+	}
+	.form--row:nth-child(4) #btnEntrar:hover,
+	.form--row:nth-child(4) #btnEntrar:focus {
+		width: 100%;
+		transform: scale(1);
+	}
+}
+
+/* 
+.container-login100{
+	background-color: #fff;
+}
+.wrap-login100{
+	background-color: #0B9E66;
+	padding-bottom: 100px;
+}
+#h1Login{
+	color: #fff;
+	
+}
+.wrap-input100 {
+	border-radius: 5px;
+	height:50px; 
+}
+.input100{
+	font-size: 15px;
+	position: relative;
+	bottom: 7px;
+	right: 10px;
+}
+.login100-form-btn{
+	background-color: #fff;
+	color: black;
+	height: 50px;
+	width: 150px;
+	position: relative;
+	left: 120px;
+	top: 45px;
+	border-radius: 5px;
+}
+.login100-form-btn:hover{
+	background-color: #E5E5E5;
+}
+.esqsenha{
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+	bottom: 10px;
+}
+#imagemLogin{
+	width: 165px;
+}
+#mensagemES{
+	color: #fff;
+	text-align: center;
+}
+.linkVoltar{
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+	right: 180px;
+	top:110px;
+} */
